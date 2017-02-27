@@ -7,7 +7,8 @@ function setClickEvent() {
     var lands = document.getElementsByClassName('land');
     Array.from(lands).forEach(land => land.onclick = function() {
         var code = this.className.baseVal.split(' ')[1].toUpperCase();
-        wikiFrame.src = 'https://ja.wikipedia.org/wiki/' + codes[code];
+        var wikiURL = 'https://ja.wikipedia.org/wiki/' + codes[code];
+        wikiFrame.src = wikiURL;
     });
 }
 
