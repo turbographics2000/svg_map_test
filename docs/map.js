@@ -8,7 +8,7 @@ function setClickEvent() {
     Array.from(paths).forEach(path => path.onclick = function(evt) {
         var target = this;
         while(target.id.length !== 2) {
-            target = this.parentElement;
+            target = target.parentElement;
         }
         var code = target.id.toUpperCase();
         wikiFrame.src = 'https://ja.wikipedia.org/wiki/' + codes[code];
