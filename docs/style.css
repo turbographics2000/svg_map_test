@@ -1,3 +1,8 @@
+#svgContainer{
+  float: left;
+  width: calc(100% - 220px);
+}
+
 svg {
   width: 100%;
   height: auto;
@@ -7,16 +12,9 @@ path:not(.ocean) {
   cursor: pointer;
 }
 
-#svgContainer{
-  max-width: calc(50% - 4px);
-  float: left;
-  width: 50%;
-}
-
 #wikiFrame {
-  max-width: calc(50% - 4px);
   float: left;
   height: 800px;
-  width: 49%;
+  width: 200px;
   border: 1px solid gray;
 }
