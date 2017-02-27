@@ -7,10 +7,10 @@ fetch('BlankMap-World6-Equirectangular.svg').then(res => res.text()).then(svgTex
 
 function setClickEvent() {
     var land = document.getElementsByClassName('land');
-    land.onclick = function() {
+    land.addEventListener('cick', function() {
         var code = this.className.split(' ')[0].toLowerCase();
         console.log(codes[code]);
-    }
+    });
 }
 
 var codes = {
