@@ -4,7 +4,7 @@ fetch('BlankMap-World6-Equirectangular.svg').then(res => res.text()).then(svgTex
 });
 
 function setClickEvent() {
-    var lands = document.getElementsByTagName('land');
+    var lands = document.getElementsByClassName('land');
     Array.from(lands).forEach(land => land.onclick = function(evt) {
         var code = this.id.toUpperCase();
         wikiFrame.src = 'https://ja.wikipedia.org/wiki/' + codes[code];
