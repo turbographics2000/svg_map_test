@@ -4,10 +4,14 @@
   float: left;
   width: 50%;
 }
+svg {
+  width: 100%;
+  height: auto;
+}
 
 #wikiFrame {
   max-width: calc(50% - 4px);
   float: left;
   height: 800px;
-  width: 50%;
+  width: 49%;
 }
