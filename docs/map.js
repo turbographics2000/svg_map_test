@@ -4,13 +4,10 @@ fetch('BlankMap-World6-Equirectangular.svg').then(res => res.text()).then(svgTex
 });
 
 function setClickEvent() {
-    var lands = document.getElementsByClassName('land');
-    Array.from(lands).forEach(land => land.onclick = function(evt) {
-        var code = this.className.baseVal.split(' ')[1].toUpperCase();
-        if(code === 'COAST') code = this.className.baseVal.split(' ')[2].toUpperCase();
-        evt.stopPropagation();
-        var wikiURL = 'https://ja.wikipedia.org/wiki/' + codes[code];
-        wikiFrame.src = wikiURL;
+    var coasts = document.getElementsByClassName('coast');
+    Array.from(coasts).forEach(coast => coast.onclick = function(evt) {
+        var code = this.id.toUpperCase();
+        wikiFrame.src = 'https://ja.wikipedia.org/wiki/' + codes[code];
     });
 }
 
