@@ -1,6 +1,5 @@
 fetch('BlankMap-World6-Equirectangular.svg').then(res => res.text()).then(svgText => {
-    var svg = document.createElement('svg');
-    svgContainer.innerHTML = svg;
+    svgContainer.innerHTML = svgText;
     setTimeout(setClickEvent);
 });
 
