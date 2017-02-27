@@ -1,12 +1,16 @@
+svg {
+  width: 100%;
+  height: auto;
+}
+
+.land {
+  cursor: pointer;
+}
+
 #svgContainer{
   max-width: calc(50% - 4px);
   float: left;
   width: 50%;
-}
-
-svg {
-  width: 100%;
-  height: auto;
 }
 
 #wikiFrame {
