@@ -1,6 +1,6 @@
 #svgContainer{
   float: left;
-  width: calc(100% - 220px);
+  width: calc(100% - 520px);
 }
 
 svg {
@@ -15,6 +15,6 @@ path:not(.ocean) {
 #wikiFrame {
   float: left;
   height: 800px;
-  width: 200px;
+  width: 500px;
   border: 1px solid gray;
 }
