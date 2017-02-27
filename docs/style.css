@@ -1,9 +1,9 @@
 #svgContainer{
   max-width: calc(50% - 4px);
-  margin: 4px;
   float: left;
   width: 50%;
 }
+
 svg {
   width: 100%;
   height: auto;
@@ -14,4 +14,5 @@ svg {
   float: left;
   height: 800px;
   width: 49%;
+  border: 1px solid gray;
 }
